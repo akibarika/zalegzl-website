@@ -49,7 +49,7 @@ class BlogList extends React.Component {
       return <ContentLoader height={650} />
     } else if (status === 'failure') {
       // 若数据加载失败
-      return <PointOutContent text="数据加载失败，请刷新页面重试" />
+      return <PointOutContent text="There is an issue here, please refresh" />
     } else if (status === 'success' && amount === 0) {
       // 数据获取成功，但没有任何数据
       return <PointOutContent text="No data" />

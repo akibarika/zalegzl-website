@@ -24,7 +24,7 @@ class Blog extends Component {
     if (status === '' || status === 'pending') {
       return <ContentLoader height={800} />
     } else if (status === 'failure') {
-      return <PointOutContent text="数据加载失败，请刷新页面重试" />
+      return <PointOutContent text="There is an issue here, please refresh" />
     }
 
     return (

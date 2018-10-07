@@ -10,28 +10,28 @@ const navList = [
   {
     key: 'home',
     to: '/blogs',
-    name: '首页',
+    name: 'Home',
     icon: 'fas fa-home',
     exact: false
   },
   {
     key: 'categories',
     to: '/categories',
-    name: '分类',
+    name: 'Categories',
     icon: 'fas fa-th',
     exact: false
   },
   {
     key: 'tags',
     to: '/tags',
-    name: '标签',
+    name: 'Tags',
     icon: 'fas fa-tags',
     exact: false
   },
   {
     key: 'about',
     to: '/about',
-    name: '关于',
+    name: 'About',
     icon: 'fas fa-user',
     exact: false
   }

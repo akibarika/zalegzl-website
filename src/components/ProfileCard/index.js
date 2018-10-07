@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
 import { Link } from 'react-router-dom'
 import { requestGetProfileInfo } from '../../reducers/profile'
-import img from '../../assets/duck.jpg'
+import img from '../../assets/dog.jpg'
 
 const StyledProfileCard = styled.div`
   background-color: #fff;
@@ -92,13 +92,13 @@ const StyledSocialMedia = styled.div`
 
 const SocialMedia = () => (
   <StyledSocialMedia>
-    <a href="https://github.com/zaleGZL">
+    <a href="https://github.com/akibarika">
       <i className="fab fa-github" />
     </a>
-    <a href="https://weibo.com/5723678128/profile">
-      <i className="fab fa-weibo" />
-    </a>
-    <a href="https://www.linkedin.com/in/%E6%B3%BD%E5%87%8C-%E9%83%AD-8776a913b/">
+    {/*<a href="https://weibo.com/5723678128/profile">*/}
+      {/*<i className="fab fa-weibo" />*/}
+    {/*</a>*/}
+    <a href="https://nz.linkedin.com/in/sawyer-lu-651a684b">
       <i className="fab fa-linkedin-in" />
     </a>
   </StyledSocialMedia>
@@ -115,7 +115,7 @@ class ProfileCard extends React.Component {
         <StyledImgContainer>
           <img src={img} alt="duck" />
         </StyledImgContainer>
-        <StyledName>ZALE</StyledName>
+        <StyledName>Sawyer</StyledName>
         <StyledDescription>
           Keep growing, fuck everything else.
         </StyledDescription>
@@ -123,19 +123,19 @@ class ProfileCard extends React.Component {
           <StyledInfo>
             <Link to="/blogs">
               <span>{this.props.blogCount}</span>
-              <span>日志</span>
+              <span>Post</span>
             </Link>
           </StyledInfo>
           <StyledInfo>
             <Link to="/categories">
               <span>{this.props.categoryCount}</span>
-              <span>分类</span>
+              <span>Category</span>
             </Link>
           </StyledInfo>
           <StyledInfo>
             <Link to="/tags">
               <span>{this.props.tagCount}</span>
-              <span>标签</span>
+              <span>Tag</span>
             </Link>
           </StyledInfo>
         </StyledInfoContainer>
