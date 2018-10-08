@@ -95,7 +95,7 @@ const SocialMedia = () => (
     <a href="https://github.com/akibarika">
       <i className="fab fa-github" />
     </a>
-    {/*<a href="https://weibo.com/5723678128/profile">*/}
+    {/*<a href="">*/}
       {/*<i className="fab fa-weibo" />*/}
     {/*</a>*/}
     <a href="https://nz.linkedin.com/in/sawyer-lu-651a684b">
@@ -146,9 +146,12 @@ class ProfileCard extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  blogCount: state.profile.blogCount,
-  tagCount: state.profile.tagCount,
-  categoryCount: state.profile.categoryCount
+  // blogCount: state.profile.blogCount,
+  // tagCount: state.profile.tagCount,
+  // categoryCount: state.profile.categoryCount
+    blogCount: 0,
+    tagCount: 0,
+    categoryCount: 0
 })
 
 const mapDispatchToProps = dispatch =>

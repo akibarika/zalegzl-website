@@ -132,9 +132,12 @@ class BlogList extends React.Component {
 }
 
 const mapStateToProps = state => ({
-  status: state.blogList.status,
-  blogList: state.blogList.list,
-  amount: state.blogList.amount
+  // status: state.blogList.status,
+  // blogList: state.blogList.list,
+  // amount: state.blogList.amount
+    status: `success`,
+    blogList: [],
+    amount: 0
 })
 
 const mapDispatchToProps = dispatch =>

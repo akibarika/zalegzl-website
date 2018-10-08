@@ -50,8 +50,10 @@ class Blog extends Component {
 }
 
 const mapStateToProps = state => ({
-  status: state.resume.status,
-  htmlContent: state.resume.htmlContent
+  // status: state.resume.status,
+  // htmlContent: state.resume.htmlContent
+    status: `success`,
+    htmlContent: `I am Sawyer and I love React!`
 })
 
 const mapDispatchToProps = dispatch =>

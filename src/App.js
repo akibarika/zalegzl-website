@@ -14,7 +14,7 @@ import ScrollToTop from './components/ScrollToTop'
 import PointOutContent from './components/PointOutContent'
 import ResumeContent from './components/ResumeContent'
 
-const OnDevelopingContent = () => <PointOutContent text="开发中，敬请期待..." />
+const OnDevelopingContent = () => <PointOutContent text="Under developing..." />
 const NotFoundContent = () => <PointOutContent text="404 Not found" />
 
 const App = () => (

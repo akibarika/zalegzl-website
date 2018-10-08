@@ -67,8 +67,10 @@ class Blog extends Component {
 }
 
 const mapStateToProps = state => ({
-  status: state.blog.status,
-  blog: state.blog.data
+  // status: state.blog.status,
+  // blog: state.blog.data
+    status: `success`,
+    blog: `test`
 })
 
 const mapDispatchToProps = dispatch =>
